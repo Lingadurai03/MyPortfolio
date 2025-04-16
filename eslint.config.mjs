@@ -13,73 +13,80 @@ const __dirname = path.dirname(__filename);
 
 // Initialize FlatCompat
 const compat = new FlatCompat({
-  baseDirectory: __dirname,
-  recommendedConfig: js.configs.recommended,
-  allConfig: js.configs.all,
+    baseDirectory: __dirname,
+    recommendedConfig: js.configs.recommended,
+    allConfig: js.configs.all,
 });
 
 export default [
-  {
-    ignores: [
-      '**/.eslintrc.js',
-      '**/.next/**',
-      'next.config.mjs',
-      'postcss.config.*',
-      'tailwind.config.*',
-    ],
-  },
+    {
+        ignores: [
+            '**/.eslintrc.js',
+            '**/.next/**',
+            'next.config.mjs',
+            'postcss.config.*',
+            'tailwind.config.*',
+        ],
+    },
 
-  ...compat.extends(
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
-  ),
-  {
-    plugins: {
-      '@typescript-eslint': typescriptEslintEslintPlugin,
-      'simple-import-sort': simpleImportSort,
-      'unused-imports': unusedImports,
-      prettier: prettierPlugin,
-    },
-    languageOptions: {
-      parser: tsParser,
-      ecmaVersion: 2021,
-      sourceType: 'module',
-      parserOptions: {
-        project: path.resolve(__dirname, './tsconfig.json'),
-      },
-    },
-    rules: {
-      '@typescript-eslint/interface-name-prefix': 'off',
-      '@typescript-eslint/explicit-function-return-type': 'off',
-      '@typescript-eslint/explicit-module-boundary-types': 'off',
-      '@typescript-eslint/no-explicit-any': 'warn',
-      'simple-import-sort/imports': [
-        'error',
-        {
-          groups: [
-            ['^react', '^@?\\w'],
-            ['^@/'],
-            ['^@/components', '^@/store'],
-            ['^\\.'],
-          ],
+    ...compat.extends(
+        'plugin:@typescript-eslint/recommended',
+        'plugin:prettier/recommended',
+    ),
+    {
+        plugins: {
+            '@typescript-eslint': typescriptEslintEslintPlugin,
+            'simple-import-sort': simpleImportSort,
+            'unused-imports': unusedImports,
+            prettier: prettierPlugin,
         },
-      ],
+        languageOptions: {
+            parser: tsParser,
+            ecmaVersion: 2021,
+            sourceType: 'module',
+            parserOptions: {
+                project: path.resolve(__dirname, './tsconfig.json'),
+            },
+        },
+        rules: {
+            '@typescript-eslint/interface-name-prefix': 'off',
+            '@typescript-eslint/explicit-function-return-type': 'off',
+            '@typescript-eslint/explicit-module-boundary-types': 'off',
+            '@typescript-eslint/no-explicit-any': 'warn',
+            'simple-import-sort/imports': [
+                'error',
+                {
+                    groups: [
+                        ['^react', '^@?\\w'],
+                        ['^@/'],
+                        ['^@/components', '^@/store'],
+                        ['^\\.'],
+                    ],
+                },
+            ],
 
-      'unused-imports/no-unused-imports': 'error',
-      'no-unused-vars': 'off',
-      '@typescript-eslint/no-unused-vars': [
-        'error',
-        {
-          vars: 'all',
-          args: 'after-used',
-          argsIgnorePattern: '^_',
-          varsIgnorePattern: '^_',
-          caughtErrors: 'all',
-          caughtErrorsIgnorePattern: '^_',
-          destructuredArrayIgnorePattern: '^_',
-          ignoreRestSiblings: true,
+            'unused-imports/no-unused-imports': 'error',
+            'no-unused-vars': 'off',
+            '@typescript-eslint/no-unused-vars': [
+                'error',
+                {
+                    vars: 'all',
+                    args: 'after-used',
+                    argsIgnorePattern: '^_',
+                    varsIgnorePattern: '^_',
+                    caughtErrors: 'all',
+                    caughtErrorsIgnorePattern: '^_',
+                    destructuredArrayIgnorePattern: '^_',
+                    ignoreRestSiblings: true,
+                },
+            ],
+            'prettier/prettier': [
+                'error',
+                {
+                    tabWidth: 4,
+                    useTabs: false,
+                },
+            ],
         },
-      ],
     },
-  },
 ];
