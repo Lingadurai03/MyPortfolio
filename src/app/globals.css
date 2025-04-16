@@ -1,1 +1,130 @@
 @import 'tailwindcss';
+
+/* Tailwind utilities */
+@tailwind utilities;
+
+/* Define base styles and animations using @layer */
+@layer base {
+    .navItem {
+        @apply px-4 py-1.5 rounded-full text-white/70 text-sm font-semibold hover:bg-white/10 hover:text-white transition duration-300;
+    }
+    .heroRing {
+        @apply absolute -z-32 inset-0 border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5;
+    }
+
+    .animate-ringPulse {
+        animation: ringPulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+}
+
+@layer components {
+    .animate-smoothSlide {
+        animation: smoothSlide 12s ease-in-out infinite; /* Increased the total time to 12s for slower pace */
+    }
+
+    .skillItem {
+        height: 1.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    @keyframes smoothSlide {
+        0% {
+            transform: translateY(0%);
+        }
+
+        16.66% {
+            transform: translateY(0%);
+        }
+
+        20% {
+            transform: translateY(-100%);
+        }
+
+        36.66% {
+            transform: translateY(-100%);
+        }
+
+        40% {
+            transform: translateY(-200%);
+        }
+
+        56.66% {
+            transform: translateY(-200%);
+        }
+
+        60% {
+            transform: translateY(-300%);
+        }
+
+        76.66% {
+            transform: translateY(-300%);
+        }
+
+        80% {
+            transform: translateY(-400%);
+        }
+
+        96.66% {
+            transform: translateY(-400%);
+        }
+
+        100% {
+            transform: translateY(-500%);
+        }
+    }
+}
+
+/* Keyframes for custom animation */
+@keyframes ringPulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2.2);
+        opacity: 0;
+    }
+}
+
+/* Custom delay classes for animation */
+@layer utilities {
+    .delay-200 {
+        animation-delay: 200ms;
+    }
+
+    .delay-400 {
+        animation-delay: 400ms;
+    }
+
+    .delay-600 {
+        animation-delay: 600ms;
+    }
+
+    .delay-800 {
+        animation-delay: 800ms;
+    }
+
+    /* Name flooting animation */
+    @keyframes floatLetter {
+        0% {
+            transform: translateY(0);
+        }
+        10% {
+            transform: translateY(-5px);
+            color: #0e9f6e;
+        }
+        20% {
+            transform: translateY(0);
+            color: white;
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .animate-floatLetter {
+        animation-name: floatLetter;
+        animation-timing-function: ease-in-out;
+    }
+}
