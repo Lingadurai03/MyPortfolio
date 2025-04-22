@@ -1,12 +1,13 @@
-import { HeroSection } from '@/sections';
+import { AboutSection, HeroSection } from '@/sections';
 
 import { NavBar } from '@/components';
 
 export default function Home() {
     return (
-        <main className='px-2'>
+        <main>
             <NavBar />
             <HeroSection />
+            <AboutSection />
         </main>
     );
 }

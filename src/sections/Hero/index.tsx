@@ -103,7 +103,7 @@ const Hero = () => {
                         <span className='font-bold text-white not-italic'>
                             100+
                         </span>{' '}
-                        on LeetCode 🚀
+                        on LeetCode
                     </p>
                 </div>
                 <div className='flex flex-col items-center mt-8 gap-4'>
