@@ -1,3 +1,13 @@
 export { default as ArrowDown } from './arrow-down.svg';
 export { default as FilePdf } from './file-pdf.svg';
 export { default as TwinkleStar } from './TwinkleStar';
+export { default as CssSVG } from './css.svg';
+export { default as DockerSVG } from './docker.svg';
+export { default as HtmlSVG } from './html.svg';
+export { default as JavaScriptSVG } from './javascript.svg';
+export { default as MongoDBSVG } from './mongodb.svg';
+export { default as NestjsSVG } from './nestjs.svg';
+export { default as NextjsSVG } from './nextjs.svg';
+export { default as PostgressSVG } from './postgresql.svg';
+export { default as ReactNativeSVG } from './reactNative.svg';
+export { default as TypeScriptSVG } from './typescript.svg';
