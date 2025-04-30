@@ -1,5 +1,6 @@
 import {
     AboutSection,
+    ContactMeSection,
     HeroSection,
     SkillsSection,
     WorkExperienceSection,
@@ -15,6 +16,7 @@ export default function Home() {
             <AboutSection />
             <SkillsSection />
             <WorkExperienceSection />
+            <ContactMeSection />
         </main>
     );
 }
