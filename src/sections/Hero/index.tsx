@@ -7,7 +7,10 @@ import { HeroOrbit, RotatingSkills, WavingHand } from '@/components';
 
 const Hero = () => {
     return (
-        <section className='py-20 sm:py-32 flex justify-center relative z-0 overflow-clip'>
+        <section
+            id='hero'
+            className='py-20 sm:py-32 flex justify-center relative z-0 overflow-clip'
+        >
             <div className='absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_70%,transparent_100%)]'>
                 <div className='heroRing size-[620px]' />
                 <div className='heroRing size-[820px]' />

@@ -33,7 +33,7 @@ const Skills = () => {
     ];
 
     return (
-        <section className='mx-auto mt-10 max-w-[1200px]'>
+        <section id='skills' className='mx-auto mt-10 max-w-[1200px]'>
             <div className='flex justify-center items-center'>
                 <Heading>Skills</Heading>
             </div>

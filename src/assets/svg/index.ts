@@ -11,3 +11,7 @@ export { default as NextjsSVG } from './nextjs.svg';
 export { default as PostgressSVG } from './postgresql.svg';
 export { default as ReactNativeSVG } from './reactNative.svg';
 export { default as TypeScriptSVG } from './typescript.svg';
+export { default as GithubSVG } from './github.svg';
+export { default as LeetCodeSVG } from './leetcode.svg';
+export { default as GeeksForGeeksSVG } from './geeksforgeeks.svg';
+export { default as LinkedInSVG } from './linkedin.svg';

@@ -1,5 +1,6 @@
-export { default as HeroSection } from '../sections/Hero';
-export { default as AboutSection } from '../sections/About';
-export { default as SkillsSection } from '../sections/Skills';
-export { default as WorkExperienceSection } from '../sections/WorkExperience';
-export { default as ContactMeSection } from '../sections/ContactMe';
+export { default as HeroSection } from './Hero';
+export { default as AboutSection } from './About';
+export { default as SkillsSection } from './Skills';
+export { default as WorkExperienceSection } from './WorkExperience';
+export { default as ContactMeSection } from './ContactMe';
+export { default as FooterSection } from './Footer';

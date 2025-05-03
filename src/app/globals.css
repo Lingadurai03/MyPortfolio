@@ -157,3 +157,7 @@
         animation-timing-function: ease-in-out;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+}

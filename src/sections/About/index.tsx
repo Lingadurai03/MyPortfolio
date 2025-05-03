@@ -4,7 +4,7 @@ import { Heading } from '@/components';
 
 const About = () => {
     return (
-        <section className='relative overflow-x-clip px-5'>
+        <section id='about' className='relative overflow-x-clip px-5'>
             <div className='bg-emerald-300 sm:h-[800px] h-60 w-60 sm:w-[800px] -left-20 sm:left-[-500px] -z-10 absolute rounded-full opacity-40 blur-[100px] sm:blur-[400px]' />
             <div className='bg-emerald-300 top-[400px] -right-20 sm:top-[700px] h-60 w-60 sm:h-[800px] sm:w-[800px] sm:right-[-500px] -z-10 absolute rounded-full opacity-40 blur-[100px] sm:blur-[400px]' />
 
