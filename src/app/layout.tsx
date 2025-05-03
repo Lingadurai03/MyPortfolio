@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { Calistoga, Inter } from 'next/font/google';
 import { twMerge } from 'tailwind-merge';
 
+import { QueryProvider } from '@/components';
+
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -28,7 +30,7 @@ export default function RootLayout({
                     'bg-gray-900 text-white antialiased font-sans',
                 )}
             >
-                {children}
+                <QueryProvider>{children}</QueryProvider>
             </body>
         </html>
     );

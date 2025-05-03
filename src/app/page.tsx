@@ -1,3 +1,5 @@
+import { ToastContainer } from 'react-toastify';
+
 import {
     AboutSection,
     ContactMeSection,
@@ -10,13 +12,14 @@ import { NavBar } from '@/components';
 
 export default function Home() {
     return (
-        <main>
+        <main style={{ position: 'relative' }}>
             <NavBar />
             <HeroSection />
             <AboutSection />
             <SkillsSection />
             <WorkExperienceSection />
             <ContactMeSection />
+            <ToastContainer position='top-right' autoClose={3000} />
         </main>
     );
 }

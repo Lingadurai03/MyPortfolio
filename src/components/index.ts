@@ -3,3 +3,7 @@ export { default as RotatingSkills } from './RotatingSkills';
 export { default as WavingHand } from './WavingHand';
 export { default as HeroOrbit } from './HeroOrbit';
 export { default as Heading } from './Heading';
+export { default as ContactForm } from './ContactForm';
+export { default as QueryProvider } from './QueryProvider';
+export { default as Spinner } from './Spinner';
+export { default as ContactMap } from './ContactMap';
