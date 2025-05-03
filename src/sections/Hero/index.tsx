@@ -49,7 +49,7 @@ const Hero = () => {
                 </HeroOrbit>
             </div>
 
-            <div className='container'>
+            <div className='container mt-5'>
                 <div className='flex flex-col items-center'>
                     <Image
                         className='size-[200px] border rounded-b-full'

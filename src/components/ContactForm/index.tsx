@@ -33,7 +33,7 @@ const ContactForm = () => {
             <div className='mb-4'>
                 <label
                     htmlFor='name'
-                    className='block mb-1 text-emerald-100 text-sm'
+                    className='block mb-1 text-gray-300 text-sm'
                 >
                     Name*
                 </label>
@@ -54,7 +54,7 @@ const ContactForm = () => {
             <div className='mb-4'>
                 <label
                     htmlFor='email'
-                    className='block mb-1 text-emerald-100 text-sm'
+                    className='block mb-1 text-gray-300 text-sm'
                 >
                     Email*
                 </label>
@@ -81,7 +81,7 @@ const ContactForm = () => {
             <div className='mb-4'>
                 <label
                     htmlFor='message'
-                    className='block mb-1 text-emerald-100 text-sm'
+                    className='block mb-1 text-gray-300 text-sm'
                 >
                     Message*
                 </label>

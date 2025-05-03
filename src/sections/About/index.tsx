@@ -11,7 +11,7 @@ const About = () => {
             <div className='max-w-[800px] mx-auto sm:mt-20 px-5 sm:px-10 py-5 sm:py-8 border border-l-white/10 border-t-white/10 border-b-0 border-r-0 flex flex-col justify-center items-center gap-5 sm:gap-10 rounded-lg bg-white/3 backdrop-blur z-10 group'>
                 <Heading>About Me</Heading>
 
-                <p className='text-xs md:text-base tracking-wide text-left'>
+                <p className='text-sm md:text-base tracking-wide text-left'>
                     I'm a passionate{' '}
                     <span className='font-bold'>Full-Stack Developer</span> with{' '}
                     <span className='font-bold'>2+ years</span> of experience

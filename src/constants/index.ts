@@ -1,19 +1,19 @@
 export const NAV_ITEMS = [
     {
         name: 'Home',
-        section: '#',
+        section: '#hero',
     },
     {
-        name: 'Projects',
-        section: '#',
+        name: 'Skills',
+        section: '#skills',
     },
     {
         name: 'About',
-        section: '#',
+        section: '#about',
     },
     {
         name: 'Contact',
-        section: '#',
+        section: '#contact',
         className:
             'bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900',
     },
@@ -21,9 +21,9 @@ export const NAV_ITEMS = [
 
 export const MY_SKILLS = [
     'React Native Developer',
-    'Next.js Dev',
-    'NestJS Backend',
+    'Next.js Developer',
+    'Backend Developer (NestJS)',
     'Frontend Engineer',
-    'Full Stack Developer',
+    'Full-Stack JavaScript Developer',
     'React Native Developer',
 ];
