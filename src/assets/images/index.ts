@@ -1,1 +1,1 @@
-export { default as ProfileImage } from './myImagewb.png';
+export { default as ProfileImage } from './myImagewb.webp';

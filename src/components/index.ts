@@ -7,3 +7,4 @@ export { default as ContactForm } from './ContactForm';
 export { default as QueryProvider } from './QueryProvider';
 export { default as Spinner } from './Spinner';
 export { default as ContactMap } from './ContactMap';
+export { default as MotionAnimation } from './MotionAnimation';
