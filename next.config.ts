@@ -1,12 +1,12 @@
+// next.config.js
 module.exports = {
-    experimental: {
-        turbo: {
-            rules: {
-                '*.svg': {
-                    loaders: ['@svgr/webpack'],
-                    as: '*.js',
-                },
-            },
-        },
+    webpack(config: any) {
+        // Add a rule to handle .svg files as React components
+        config.module.rules.push({
+            test: /\.svg$/,
+            use: ['@svgr/webpack'],
+        });
+
+        return config;
     },
 };

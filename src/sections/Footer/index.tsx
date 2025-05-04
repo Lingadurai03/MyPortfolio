@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 import {
     GeeksForGeeksSVG,
@@ -58,32 +59,40 @@ const Footer = () => {
                     </h3>
                     <ul className='flex space-x-4 text-xl'>
                         <li>
-                            <a
+                            <Link
                                 href='https://www.linkedin.com/in/lingadurai03'
                                 target='_blank'
                                 rel='noreferrer'
                             >
                                 <LinkedInSVG className='w-8 h-8 rounded-sm p-1' />
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
+                            <Link
                                 href='https://github.com/Lingadurai03'
                                 target='_blank'
                                 rel='noreferrer'
                             >
                                 <GithubSVG className='w-8 h-8 rounded-sm p-1' />
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href='https://www.geeksforgeeks.org/user/lingadurai_033/'>
+                            <Link
+                                href='https://www.geeksforgeeks.org/user/lingadurai_033/'
+                                target='_blank'
+                                rel='noreferrer'
+                            >
                                 <GeeksForGeeksSVG className='w-8 h-8 rounded-sm p-1' />
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href='https://leetcode.com/u/lingadurai_033'>
+                            <Link
+                                href='https://leetcode.com/u/lingadurai_033'
+                                target='_blank'
+                                rel='noreferrer'
+                            >
                                 <LeetCodeSVG className='w-8 h-8 rounded-sm p-1' />
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
