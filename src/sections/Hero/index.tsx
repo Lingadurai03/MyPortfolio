@@ -17,35 +17,95 @@ const Hero = () => {
                 <div className='heroRing size-[1020px]' />
                 <div className='heroRing size-[1220px]' />
 
-                <HeroOrbit size='800' rotation={-72}>
-                    <TwinkleStar className='size-24 text-emerald-300' />
-                </HeroOrbit>
-                <HeroOrbit size='550' rotation={20}>
-                    <TwinkleStar className='size-12 text-emerald-300' />
-                </HeroOrbit>
-                <HeroOrbit size='590' rotation={98}>
-                    <TwinkleStar className='size-8 text-emerald-300' />
-                </HeroOrbit>
-                <HeroOrbit size='430' rotation={-14}>
+                <HeroOrbit
+                    size='430'
+                    animationDuration={30}
+                    shouldOrbit
+                    rotation={-14}
+                    shouldSpin
+                >
                     <TwinkleStar className='size-8 text-emerald-300/20' />
                 </HeroOrbit>
-                <HeroOrbit size='440' rotation={90}>
-                    <TwinkleStar className='size-5 text-emerald-300/20' />
+                <HeroOrbit
+                    size='440'
+                    animationDuration={32}
+                    shouldOrbit
+                    rotation={90}
+                    shouldSpin
+                >
+                    <TwinkleStar className='size-5 text-emerald-300' />
                 </HeroOrbit>
-                <HeroOrbit size='530' rotation={178}>
+                <HeroOrbit
+                    size='520'
+                    shouldOrbit
+                    animationDuration={38}
+                    rotation={-41}
+                    shouldSpin
+                >
+                    <div className='size-2 rounded-full bg-emerald-300/20' />
+                </HeroOrbit>
+                <HeroOrbit
+                    size='530'
+                    animationDuration={34}
+                    shouldOrbit
+                    rotation={178}
+                    shouldSpin
+                >
                     <TwinkleStar className='size-10 text-emerald-300/20' />
                 </HeroOrbit>
-                <HeroOrbit size='710' rotation={144}>
+                <HeroOrbit
+                    size='550'
+                    animationDuration={36}
+                    shouldOrbit
+                    rotation={20}
+                    shouldSpin
+                >
+                    <TwinkleStar className='size-12 text-emerald-300' />
+                </HeroOrbit>
+                <HeroOrbit
+                    size='590'
+                    animationDuration={38}
+                    shouldOrbit
+                    rotation={98}
+                    shouldSpin
+                >
+                    <TwinkleStar className='size-8 text-emerald-300' />
+                </HeroOrbit>
+                <HeroOrbit
+                    size='650'
+                    shouldOrbit
+                    animationDuration={54}
+                    rotation={-5}
+                    shouldSpin
+                >
+                    <div className='size-2 rounded-full bg-emerald-300/20' />
+                </HeroOrbit>
+                <HeroOrbit
+                    size='710'
+                    animationDuration={40}
+                    shouldOrbit
+                    rotation={144}
+                    shouldSpin
+                >
                     <TwinkleStar className='size-14 text-emerald-300/20' />
                 </HeroOrbit>
-                <HeroOrbit size='720' rotation={85}>
-                    <div className='size-2 rounded-full bg-emerald-200/20' />
+                <HeroOrbit
+                    size='720'
+                    shouldOrbit
+                    animationDuration={42}
+                    rotation={85}
+                    shouldSpin
+                >
+                    <div className='size-2 rounded-full bg-emerald-200' />
                 </HeroOrbit>
-                <HeroOrbit size='520' rotation={-41}>
-                    <div className='size-2 rounded-full bg-emerald-300/20' />
-                </HeroOrbit>
-                <HeroOrbit size='650' rotation={-5}>
-                    <div className='size-2 rounded-full bg-emerald-300/20' />
+                <HeroOrbit
+                    size='800'
+                    shouldOrbit
+                    rotation={-72}
+                    shouldSpin
+                    animationDuration={44}
+                >
+                    <TwinkleStar className='size-24 text-emerald-300' />
                 </HeroOrbit>
             </div>
 
